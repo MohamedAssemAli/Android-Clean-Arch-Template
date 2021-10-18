@@ -28,6 +28,7 @@ dependencies {
 //    common()
 //    testImplementation(Dependencies.Test.Unit.JUNIT)
 
-    appCompat()
+    androidX()
     materialDesign()
+    coroutines()
 }

@@ -1,6 +1,5 @@
 plugins {
     `kotlin-dsl`
-    `kotlin-dsl-precompiled-script-plugins`
 }
 
 repositories {
@@ -13,7 +12,6 @@ dependencies {
     implementation("com.android.tools.build:gradle:4.2.1")
 
     // This should be in-sync with the Kotlin version exposed by `Versions.kt`
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
-
-    implementation(kotlin("script-runtime"))
+    // kotlin plugin, required by custom plugin
+    implementation(kotlin("gradle-plugin:1.5.21"))
 }

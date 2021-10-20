@@ -1,4 +1,4 @@
-import org.gradle.api.artifacts.dsl.DependencyHandler
+import org.gradle.kotlin.dsl.DependencyHandlerScope
 
 /**
  * Created by mohamedassem on 18-Oct-2021.
@@ -7,18 +7,18 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
  * https://gitlab.com/mohamed.assem.ali
  */
 
-fun DependencyHandler.implementation(depName: String) {
+fun DependencyHandlerScope.implementation(depName: String) {
     add("implementation", depName)
 }
 
-fun DependencyHandler.kapt(depName: String) {
+fun DependencyHandlerScope.kapt(depName: String) {
     add("kapt", depName)
 }
 
-fun DependencyHandler.compileOnly(depName: String) {
+fun DependencyHandlerScope.compileOnly(depName: String) {
     add("compileOnly", depName)
 }
 
-fun DependencyHandler.api(depName: String) {
+fun DependencyHandlerScope.api(depName: String) {
     add("api", depName)
 }

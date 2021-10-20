@@ -1,4 +1,4 @@
-import org.gradle.api.artifacts.dsl.DependencyHandler
+import org.gradle.kotlin.dsl.DependencyHandlerScope
 
 /**
  * Created by mohamedassem on 18-Oct-2021.
@@ -6,11 +6,11 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
  * https://github.com/MohamedAssemAli
  * https://gitlab.com/mohamed.assem.ali
  */
-fun DependencyHandler.kotlin() {
+fun DependencyHandlerScope.kotlin() {
     implementation(Dependencies.Kotlin.STD_LIB)
 }
 
-fun DependencyHandler.androidX() {
+fun DependencyHandlerScope.androidX() {
     implementation(Dependencies.AndroidX.ANDROID_APP_COMPAT)
     implementation(Dependencies.AndroidX.ANDROID_CORE_KTX)
     implementation(Dependencies.AndroidX.ANDROID_WORK_MANAGER)
@@ -21,7 +21,7 @@ fun DependencyHandler.androidX() {
     lifeCycle()
 }
 
-fun DependencyHandler.lifeCycle() {
+fun DependencyHandlerScope.lifeCycle() {
     implementation(Dependencies.AndroidX.LIFECYCLE_VIEWMODEL)
     implementation(Dependencies.AndroidX.LIFECYCLE)
     kapt(Dependencies.AndroidX.KAPT_LIFECYCLE_COMPILER)
@@ -29,7 +29,7 @@ fun DependencyHandler.lifeCycle() {
     implementation(Dependencies.AndroidX.LIFECYCLE_LIVEDATA)
 }
 
-fun DependencyHandler.materialDesign() {
+fun DependencyHandlerScope.materialDesign() {
     implementation(Dependencies.MaterialDesign.MATERIAL)
     implementation(Dependencies.MaterialDesign.CARD_VIEW)
     implementation(Dependencies.MaterialDesign.RECYCLER_VIEW)
@@ -37,7 +37,7 @@ fun DependencyHandler.materialDesign() {
     implementation(Dependencies.MaterialDesign.FLEX_BOX)
 }
 
-fun DependencyHandler.networking() {
+fun DependencyHandlerScope.networking() {
     implementation(Dependencies.Square.RETROFIT2)
     implementation(Dependencies.Square.OKHTTP3)
     implementation(Dependencies.Square.LOGGING_INTERCEPTOR)
@@ -45,11 +45,11 @@ fun DependencyHandler.networking() {
     implementation(Dependencies.PAGING)
 }
 
-fun DependencyHandler.gson() {
+fun DependencyHandlerScope.gson() {
     implementation(Dependencies.GSON)
 }
 
-fun DependencyHandler.hilt() {
+fun DependencyHandlerScope.hilt() {
     implementation(Dependencies.Hilt.HILT_ANDROID)
     kapt(Dependencies.Hilt.KAPT_HILT_ANDROID)
     implementation(Dependencies.Hilt.HILT_VIEWMODEL)
@@ -57,20 +57,19 @@ fun DependencyHandler.hilt() {
     implementation(Dependencies.Hilt.HILT_WORK)
 }
 
-fun DependencyHandler.coroutines() {
+fun DependencyHandlerScope.coroutines() {
     implementation(Dependencies.Coroutines.COROUTINES_CORE)
     implementation(Dependencies.Coroutines.COROUTINES_ANDROID)
 }
 
-fun DependencyHandler.room() {
+fun DependencyHandlerScope.room() {
     implementation(Dependencies.Room.ROOM_RUNTIME)
     implementation(Dependencies.Room.ROOM_KTX)
     kapt(Dependencies.Room.ROOM_COMPILER_KAPT)
 }
 
-fun DependencyHandler.glide() {
+fun DependencyHandlerScope.glide() {
     implementation(Dependencies.Glide.GLIDE)
     kapt(Dependencies.Glide.GLIDE_KAPT)
 }
-
 

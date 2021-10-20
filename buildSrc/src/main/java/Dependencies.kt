@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.DependencyHandlerScope
+
 /**
  * Created by mohamedassem on 18-Oct-2021.
  * mohamed.assem.ali@gmail.com
@@ -45,6 +47,17 @@ object Dependencies {
         // LiveData
         const val LIFECYCLE_LIVEDATA =
             "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.AndroidX.LIFECYCLE}"
+    }
+
+    fun DependencyHandlerScope.androidX() {
+        implementation(Dependencies.AndroidX.ANDROID_APP_COMPAT)
+        implementation(Dependencies.AndroidX.ANDROID_CORE_KTX)
+        implementation(Dependencies.AndroidX.ANDROID_WORK_MANAGER)
+        implementation(Dependencies.AndroidX.ACTIVITY_KTX)
+        implementation(Dependencies.AndroidX.FRAGMENT_KTX)
+        implementation(Dependencies.AndroidX.MULTIDEX)
+        implementation(Dependencies.AndroidX.LEGACY)
+        lifeCycle()
     }
 
     object MaterialDesign {

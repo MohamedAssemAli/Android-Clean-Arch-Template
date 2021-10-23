@@ -11,13 +11,13 @@ fun DependencyHandler.kotlin() {
 }
 
 fun DependencyHandler.androidX() {
-    implementation(Dependencies.AndroidX.ANDROID_APP_COMPAT)
-    implementation(Dependencies.AndroidX.ANDROID_CORE_KTX)
-    implementation(Dependencies.AndroidX.ANDROID_WORK_MANAGER)
-    implementation(Dependencies.AndroidX.ACTIVITY_KTX)
-    implementation(Dependencies.AndroidX.FRAGMENT_KTX)
-    implementation(Dependencies.AndroidX.MULTIDEX)
-    implementation(Dependencies.AndroidX.LEGACY)
+    api(Dependencies.AndroidX.ANDROID_APP_COMPAT)
+    api(Dependencies.AndroidX.ANDROID_CORE_KTX)
+    api(Dependencies.AndroidX.ANDROID_WORK_MANAGER)
+    api(Dependencies.AndroidX.ACTIVITY_KTX)
+    api(Dependencies.AndroidX.FRAGMENT_KTX)
+    api(Dependencies.AndroidX.MULTIDEX)
+    api(Dependencies.AndroidX.LEGACY)
     lifeCycle()
 }
 

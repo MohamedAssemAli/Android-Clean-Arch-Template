@@ -59,7 +59,7 @@ object Versions {
     const val PAGING = "3.1.0-beta01"
 
     // Make sure to update `buildSrc/build.gradle.kts` when updating this
-    const val GRADLE = "4.2.1"
+    const val GRADLE = "7.2.0-alpha01"
 
     // Make sure to update `buildSrc/build.gradle.kts` when updating this
     const val KOTLIN = "1.5.10"

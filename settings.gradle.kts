@@ -1,2 +1,2 @@
 rootProject.name = "AndroidCleanArchTemplate"
-include ':app'
+include(":app")

@@ -18,7 +18,6 @@ fun DependencyHandler.androidX() {
     api(Dependencies.AndroidX.FRAGMENT_KTX)
     api(Dependencies.AndroidX.MULTIDEX)
     api(Dependencies.AndroidX.LEGACY)
-    lifeCycle()
 }
 
 fun DependencyHandler.lifeCycle() {

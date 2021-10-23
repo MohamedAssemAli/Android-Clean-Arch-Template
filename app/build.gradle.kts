@@ -3,7 +3,9 @@ plugins {
     id(Plugins.BASE_GRADLE_PLUGIN)
 }
 dependencies {
-    androidX()
+    implementation(project(Modules.FEATURE1))
+    implementation(project(Modules.FEATURE2))
+
     networking()
     glide()
     materialDesign()

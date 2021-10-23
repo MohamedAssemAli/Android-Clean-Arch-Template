@@ -50,8 +50,16 @@ internal fun Project.configureAndroidApp() = this.extensions.getByType<AndroidBa
             jvmTarget = Versions.JAVA.toString()
         }
     }
+    buildFeatures.viewBinding = true
 }
 
 internal fun Project.configureDependencies() = this.dependencies {
     add("implementation", Dependencies.Kotlin.STD_LIB)
+    add("implementation", Dependencies.AndroidX.ANDROID_APP_COMPAT)
+    add("implementation", Dependencies.AndroidX.ANDROID_CORE_KTX)
+    add("implementation", Dependencies.AndroidX.ANDROID_WORK_MANAGER)
+    add("implementation", Dependencies.AndroidX.ACTIVITY_KTX)
+    add("implementation", Dependencies.AndroidX.FRAGMENT_KTX)
+    add("implementation", Dependencies.AndroidX.MULTIDEX)
+    add("implementation", Dependencies.AndroidX.LEGACY)
 }

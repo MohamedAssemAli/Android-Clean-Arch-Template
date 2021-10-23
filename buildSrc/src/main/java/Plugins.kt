@@ -15,6 +15,7 @@ object Plugins {
     object GradleClasspath {
         const val KOTLIN_PlUGIN = "gradle-plugin"
         const val ANDROID_GRADLE = "com.android.tools.build:gradle:${Versions.GRADLE}"
+        const val KOTLIN_GRADLE = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN}"
         const val SAFE_ARGS =
             "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.AndroidX.NAVIGATION}"
     }

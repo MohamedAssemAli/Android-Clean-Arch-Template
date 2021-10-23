@@ -15,6 +15,7 @@ buildscript {
         classpath(Plugins.GradleClasspath.ANDROID_GRADLE)
         classpath(kotlin(Plugins.GradleClasspath.KOTLIN_PlUGIN, version = Versions.KOTLIN))
         classpath(Plugins.GradleClasspath.SAFE_ARGS)
+        classpath(Plugins.GradleClasspath.KOTLIN_GRADLE)
         classpath("com.android.tools.build:gradle:7.2.0-alpha01")
     }
 }

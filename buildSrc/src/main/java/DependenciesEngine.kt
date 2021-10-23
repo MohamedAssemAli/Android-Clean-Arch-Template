@@ -23,7 +23,7 @@ fun DependencyHandler.androidX() {
 
 fun DependencyHandler.lifeCycle() {
     implementation(Dependencies.AndroidX.LIFECYCLE_VIEWMODEL)
-    implementation(Dependencies.AndroidX.LIFECYCLE)
+//    implementation(Dependencies.AndroidX.LIFECYCLE)
     kapt(Dependencies.AndroidX.KAPT_LIFECYCLE_COMPILER)
     implementation(Dependencies.AndroidX.LIFECYCLE_RUNTIME)
     implementation(Dependencies.AndroidX.LIFECYCLE_LIVEDATA)
@@ -42,7 +42,6 @@ fun DependencyHandler.networking() {
     implementation(Dependencies.Square.OKHTTP3)
     implementation(Dependencies.Square.LOGGING_INTERCEPTOR)
     implementation(Dependencies.Square.CONVERTER_GSON)
-    implementation(Dependencies.PAGING)
 }
 
 fun DependencyHandler.gson() {

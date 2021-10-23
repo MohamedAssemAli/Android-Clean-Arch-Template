@@ -35,8 +35,8 @@ object Dependencies {
         // ViewModel -  Lifecycle KTX
         const val LIFECYCLE_VIEWMODEL =
             "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.AndroidX.LIFECYCLE}"
-        const val LIFECYCLE =
-            "androidx.lifecycle:lifecycle-extensions:${Versions.AndroidX.LIFECYCLE}"
+//        const val LIFECYCLE =
+//            "androidx.lifecycle:lifecycle-extensions:${Versions.AndroidX.LIFECYCLE}"
         const val KAPT_LIFECYCLE_COMPILER =
             "androidx.lifecycle:lifecycle-compiler:${Versions.AndroidX.LIFECYCLE}"
         const val LIFECYCLE_RUNTIME =
@@ -66,11 +66,11 @@ object Dependencies {
 
     object Square {
         const val RETROFIT2 = "com.squareup.retrofit2:retrofit:${Versions.Square.RETROFIT}"
+        const val CONVERTER_GSON =
+            "com.squareup.retrofit2:converter-gson:${Versions.Square.RETROFIT}"
         const val OKHTTP3 = "com.squareup.okhttp3:okhttp:${Versions.Square.OKHTTP3}"
         const val LOGGING_INTERCEPTOR =
             "com.squareup.okhttp3:logging-interceptor:${Versions.Square.OKHTTP3}"
-        const val CONVERTER_GSON =
-            "com.squareup.retrofit2:converter-gson:${Versions.Square.CONVERTER_GSON}"
     }
 
     object Coroutines {
@@ -96,7 +96,6 @@ object Dependencies {
         const val GLIDE_KAPT = "com.github.bumptech.glide:compiler:${Versions.GLIDE}"
     }
 
-    const val PAGING = "androidx.paging:paging-runtime-ktx:${Versions.PAGING}"
     const val GSON = "com.google.code.gson:gson:${Versions.GSON}"
 
 }

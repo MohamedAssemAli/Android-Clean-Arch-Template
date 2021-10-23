@@ -22,8 +22,8 @@ gradlePlugin {
 dependencies {
     // Depend on the android gradle plugin, since we want to access it in our plugin
     // This should be in-sync with the Gradle version exposed by `Versions.kt`
-    implementation("com.android.tools.build:gradle:7.2.0-alpha01")
+    implementation("com.android.tools.build:gradle:4.2.2")
     // Depend on the kotlin plugin, since we want to access it in our plugin
     // This should be in-sync with the Kotlin version exposed by `Versions.kt`
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
 }

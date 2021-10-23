@@ -14,6 +14,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 internal fun Project.configureDefaultPlugins() {
     plugins.apply(Plugins.KOTLIN_ANDROID)
     plugins.apply(Plugins.KOTLIN_ANDROID_EXTENSIONS)
+    plugins.apply(Plugins.KAPT)
 }
 
 private typealias AndroidBaseExtension = BaseExtension

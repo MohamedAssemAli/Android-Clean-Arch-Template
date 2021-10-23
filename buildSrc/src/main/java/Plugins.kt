@@ -7,10 +7,9 @@
 
 object Plugins {
     const val ANDROID_APPLICATION = "com.android.application"
-    const val KOTLIN_ANDROID = "android"
-    const val KOTLIN_ANDROID_EXTENSIONS = "android.extensions"
+    const val KOTLIN_ANDROID = "kotlin-android"
+    const val KOTLIN_ANDROID_EXTENSIONS = "kotlin-android-extensions"
     const val KAPT = "kotlin-kapt"
-    const val COMMON = "common"
     const val BASE_GRADLE_PLUGIN = "base-gradle-plugin"
 
     object GradleClasspath {

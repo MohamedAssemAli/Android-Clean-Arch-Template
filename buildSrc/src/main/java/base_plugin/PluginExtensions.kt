@@ -1,6 +1,8 @@
 package base_plugin
 
 import BuildType
+import BuildTypeDebug
+import BuildTypeRelease
 import ConfigData
 import Dependencies
 import Plugins
@@ -30,12 +32,15 @@ internal fun Project.configureAndroidApp() = this.extensions.getByType<AndroidBa
         versionName = ConfigData.versionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         getByName(BuildType.DEBUG) {
-            isTestCoverageEnabled = true
+            isMinifyEnabled = BuildTypeDebug.isMinifyEnabled
+            isDebuggable = BuildTypeDebug.isDebuggable
         }
         getByName(BuildType.RELEASE) {
-            isMinifyEnabled = false
+            isMinifyEnabled = BuildTypeRelease.isMinifyEnabled
+            isDebuggable = BuildTypeRelease.isDebuggable
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }

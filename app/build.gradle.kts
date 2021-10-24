@@ -3,8 +3,8 @@ plugins {
     id(Plugins.BASE_GRADLE_PLUGIN)
 }
 dependencies {
-    implementation(project(Modules.FEATURE1))
-    implementation(project(Modules.FEATURE2))
+    implementation(Modules.FEATURE1)
+    implementation(Modules.FEATURE1)
 
     networking()
     glide()

@@ -57,7 +57,7 @@ object Versions {
     const val Coroutines = "1.4.2"
 
     // Make sure to update `buildSrc/build.gradle.kts` when updating this
-    const val GRADLE = "7.0.0-alpha07"
+    const val GRADLE = "7.0.3"
 
     // Make sure to update `buildSrc/build.gradle.kts` when updating this
     const val KOTLIN = "1.5.31"
